@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="mobile-agent" content="format=html5;url=/"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="./css/base.css" />
+    <script src="./libs/jquery-core.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            console.log(window.innerWidth, window.outerWidth, document.documentElement.clientWidth, document.body.clientWidth);
+
+            $('.nav-content').on('click', 'a', function(e){
+
+                var $a = $(this),
+                    href = $a.attr('href'),
+                    top = 0;
+                if(href == '#') return;
+                top = $('#'+href).offset().top;
+                e.preventDefault();
+                $('body,html').animate({
+                    scrollTop: top
+                }, 400, 'swing');
+                return false;
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo clearfix">
+            <div class="logo-content w1200">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" width="315px">
+                </a>
+                <div class="goal"></div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-content w1200">
+                <ul class="clearfix">
+                    <li>
+                        <a class="active" href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="aboutus">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="investment">投资业务</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="index-banner">
+            <div class="w1200">
+                <div class="box">
+
+                </div>
+                <p class="text1">凌晨</p>
+                <p class="text2">资本</p>
+                <p class="text3">心中有目标，眼里有诗和远方<br>行动有持续的战斗力，为人有德而不拘泥<br>人生重要的事情就是确定一个伟大的目标<br>并决心实现它</p>
+                <p class="text4">陪伴这个时代最有梦想的创业者</p>
+            </div>
+        </div>
+
+        <div class="index-about" id="aboutus">
+            <div class="w1200">
+                <h1>关于我们<br /><span>ABOUT US</span>
+                </h1>
+                <p>凌晨资本成立于2017年，是一家致力于挖掘早期优质创业公司的专业投资机构。重点关注企业服务、新兴农业、文化娱乐等行业。希望利用资本的力量，陪伴这个时代最有梦想的创业者，共同成长，价值创造，彼此为荣。凌晨资本还提供企业成长所需的策略咨询、业务拓展、团队人才建设及后续融资对接等相关服务。</p>
+                <p>何培成（花名何校长），凌晨资本创始人。十二年企业级销售老兵，前纷享销客副总经理/纷享商学院校长，后任职36氪创投销售副总裁，最美乡村《幸福马岭》董事。何校长在企业服务、战略级营销、人才体系建设等方面有着丰富实操经验与广阔的行业视野</p>
+            </div>
+        </div>
+
+        <div class="index-funds" id="investment">
+            <div class="w1200">
+                <h1>专项基金<br /><span>SPECIAL FUND</span>
+                </h1>
+
+                <div class="boxes clearfix">
+                    <div class="box">
+                        <p class="cate">信息技术基金</p>
+                        <div class="pic pic1">   </div>
+                    </div>
+                    <div class="box">
+                        <p class="cate">节能环保基金</p>
+                        <div class="pic pic2">   </div>
+                    </div>
+                    <div class="box">
+                        <p class="cate">新三板基金</p>
+                        <div class="pic pic3">   </div>
+                    </div>
+                    <div class="box mr0">
+                        <p class="cate">影视文化基金</p>
+                        <div class="pic pic4">   </div>
+                    </div>
+                    <div class="box">
+                        <p class="cate">移动创新基金</p>
+                        <div class="pic pic5">   </div>
+                    </div>
+                    <div class="box">
+                        <p class="cate">新材料基金</p>
+                        <div class="pic pic6">   </div>
+                    </div>
+                    <div class="box">
+                        <p class="cate">医疗基金</p>
+                        <div class="pic pic7">   </div>
+                    </div>
+                    <div class="box mr0">
+                        <p class="cate">夹层基金</p>
+                        <div class="pic pic8">   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            ©2017 - 版权所有 联系我们<a href="mailto:hpc@lingchenvc.com">hpc@lingchenvc.com</a>
+        </div>
+    </div>
+</body>
+</html>
