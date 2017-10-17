@@ -24,7 +24,6 @@
                     top = 0;
                 if(href == '#') return;
                 top = $('#'+href).offset().top;
-                e.preventDefault();
                 $('body,html').animate({
                     scrollTop: top
                 }, 400, 'swing');
@@ -58,6 +57,9 @@
                     <li>
                         <a href="investment">投资业务</a>
                     </li>
+                    <li>
+                        <a href="examples">投资案例</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -74,7 +76,7 @@
             </div>
         </div>
 
-        <div class="index-about" id="aboutus">
+        <div class="index-about common-h1-title" id="aboutus">
             <div class="w1200">
                 <h1>关于我们<br /><span>ABOUT US</span>
                 </h1>
@@ -83,50 +85,39 @@
             </div>
         </div>
 
-        <div class="index-funds" id="investment">
+        <div class="index-funds common-h1-title" id="investment">
             <div class="w1200">
-                <h1>专项基金<br /><span>SPECIAL FUND</span>
+                <h1>投资领域<br /><span>INVESTMENT</span>
                 </h1>
-
-                <div class="boxes clearfix">
-                    <div class="box">
-                        <p class="cate">信息技术基金</p>
-                        <div class="pic pic1">   </div>
+                <div class="clearfix column column3 img-transition">
+                    <div class="item fl mr150">
+                        <img src="./images/invest-f-pic1.jpg" alt="">
+                        <p>企业服务</p>
                     </div>
-                    <div class="box">
-                        <p class="cate">节能环保基金</p>
-                        <div class="pic pic2">   </div>
+                    <div class="item fl mr150">
+                        <img src="./images/invest-f-pic2.jpg" alt="">
+                        <p>新兴农业</p>
                     </div>
-                    <div class="box">
-                        <p class="cate">新三板基金</p>
-                        <div class="pic pic3">   </div>
-                    </div>
-                    <div class="box mr0">
-                        <p class="cate">影视文化基金</p>
-                        <div class="pic pic4">   </div>
-                    </div>
-                    <div class="box">
-                        <p class="cate">移动创新基金</p>
-                        <div class="pic pic5">   </div>
-                    </div>
-                    <div class="box">
-                        <p class="cate">新材料基金</p>
-                        <div class="pic pic6">   </div>
-                    </div>
-                    <div class="box">
-                        <p class="cate">医疗基金</p>
-                        <div class="pic pic7">   </div>
-                    </div>
-                    <div class="box mr0">
-                        <p class="cate">夹层基金</p>
-                        <div class="pic pic8">   </div>
+                    <div class="item fl">
+                        <img src="./images/invest-f-pic5.jpg" alt="">
+                        <p>文化娱乐</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="index-examples common-h1-title" id="examples">
+            <div class="w1200">
+                <h1>投资案例<br /><span>EXAMPLE</span>
+                </h1>
+                <div class="boxes img-transition">
+                    <img src="./images/example.jpg" width="200px" alt="">
+                </div>
+            </div>
+        </div>
+
         <div class="copyright">
-            ©2017 - 版权所有 联系我们<a href="mailto:hpc@lingchenvc.com">hpc@lingchenvc.com</a>
+            ©2017 - 版权所有 <a href="mailto:hpc@lingchenvc.com">联系我们：hpc@lingchenvc.com</a>
         </div>
     </div>
 </body>
